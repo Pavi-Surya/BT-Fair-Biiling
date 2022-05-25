@@ -1,0 +1,15 @@
+Algorithm:
+1. Read the log file in the specified path.
+2. Convert the text file contents to Java bean objects for processing.
+3. Identify the first log time and last log time available in the file provided.
+4. Segregate the input data list based on the username/ userid
+5. For every users do the steps 6 to 9.
+6. Segregate based on session start and session end logs.
+7a. Pair all the possible start and end logs. 
+7b. Increment the sessioncount and compute the session timings. 
+7c. Mark the data with flag for which the session computation is done.
+8a. For all the remaining logs with session start available, increment the sessioncount, and compute the session timings till last log time.
+8b. For all the remaining logs with session end available, increment the sessioncount, and compute the session timings from first log time.
+9. Frame output object with user, session count and session time details.
+10. Print the output data list.
+
